@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react' 
+import './Messages.scss'
 
-const Messages = () => {
+const Messages = ({text , date}) => {
   return (
     <div className='chat-message'>
         <div className="chat-message-text">
-            <p>salomm</p>
+            <p>{text}</p>
         </div>
         <div className="chat-message-date">
-            <p>31/03/2023</p>
+            <p>{date}</p>
         </div>
     </div>
   )
