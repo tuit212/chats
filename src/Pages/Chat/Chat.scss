@@ -47,3 +47,61 @@
     overflow-y: scroll;
     background-color: #ece5dd;
 }
+
+
+// chat-input
+
+.chat-input{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #f0f0f0;
+    position: relative;
+
+    &-btn{
+        margin-right:13px;
+        margin-left:13px;
+
+        .MuiSvgIcon-root{
+            font-size: 26px;
+            color: gray;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    }
+
+    form {
+        flex: 1;
+
+        input {
+            height: 35px;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            width: 90%;
+            margin-right: 10px;
+        }
+    }
+
+    &-send-btn {
+        background-color: #128c7e;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        .MuiSvgIcon-root{
+            font-size: 22px;
+        }
+
+        &:active{
+            transform: scale(0.95);
+        }
+    }
+}
