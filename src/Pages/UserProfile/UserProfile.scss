@@ -1,0 +1,32 @@
+.user-profile{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    &:hover{
+        background-color: lightgrey;
+    }
+}
+
+.user-img {
+    width: 45px;
+
+    .MuiSvgIcon-root{
+        font-size: 45px;
+        color: #acacac;
+    }
+}
+
+.user-info {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.user-name{
+    text-transform: capitalize;
+    font-size: 15px;
+}
