@@ -1,13 +1,19 @@
 import React from 'react'
+import { useState } from 'react';
 import PersonIcon from '@mui/icons-material/Person';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
 import SendIcon from '@mui/icons-material/Send';
+// emojicon
 import './Chat.scss'
 import Messages from '../Messages/Messages';
 
 const Chat = () => {
+
+  const [message , setMessage] = useState("");  
+
+
   return (
     <div className='chat-container'>
         <div className="chat-container-header">
@@ -49,7 +55,13 @@ const Chat = () => {
             </div>
             {/* input */}
             <form>
-                <input type="text" placeholder='message...' />
+                <input type="text" 
+                    placeholder='message...' 
+                    value={message} 
+                    onChange={(e) => {
+                        setMessage(e.target.value)
+                    }}
+                />
             </form>
             {/* send */}
             <div className="chat-input-send-btn">
